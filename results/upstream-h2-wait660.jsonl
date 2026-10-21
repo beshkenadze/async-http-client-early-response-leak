@@ -1,0 +1,6 @@
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"chunks":64,"event":"measure","http":"h2","iteratorReleased":false,"openConnections":1,"openH2Streams":1,"phase":"response","pulled":4,"registry":"registry-1.docker.io","responseBodyBytes":276,"retainedMiB":64.7,"seconds":0.522,"status":401,"version":"HTTP/2.0"}
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"channel":"h2Stream","event":"channelClosed","http":"h2","registry":"registry-1.docker.io","seconds":61.253}
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"channel":"connection","event":"channelClosed","http":"h2","registry":"registry-1.docker.io","seconds":61.253}
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"chunks":64,"event":"measure","http":"h2","iteratorReleased":false,"openConnections":0,"openH2Streams":0,"phase":"afterWait","pulled":4,"registry":"registry-1.docker.io","retainedMiB":61.3,"seconds":660}
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"event":"shutdown","http":"h2","outcome":"completed","registry":"registry-1.docker.io","seconds":0}
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"chunks":64,"event":"measure","http":"h2","iteratorReleased":false,"openConnections":0,"openH2Streams":0,"phase":"afterShutdown","pulled":4,"registry":"registry-1.docker.io","retainedMiB":61.3}

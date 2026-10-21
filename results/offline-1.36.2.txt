@@ -1,0 +1,13 @@
+cloning https://github.com/swift-server/async-http-client.git at 1.36.2 into <tmp>
+testing async-http-client 1.36.2
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithEagerStream]' started.
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithEagerStream]' passed (1.087 seconds).
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithLazyStream]' started.
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithLazyStream]' passed (1.035 seconds).
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testParkedPumpForLeaksTool]' started.
+Tests/AsyncHTTPClientTests/EarlyResponseBodyLeakTests.swift:170: -[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testParkedPumpForLeaksTool] : Test skipped - manual leaks(1) probe
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testParkedPumpForLeaksTool]' skipped (0.003 seconds).
+	 Executed 3 tests, with 1 test skipped and 0 failures (0 unexpected) in 2.125 (2.130) seconds
+	 Executed 3 tests, with 1 test skipped and 0 failures (0 unexpected) in 2.125 (2.137) seconds
+EAGER: pulled=2/64 iteratorReleased=false retainedMiB=63 releasedAfterCancel=true
+LAZY: pulled=2/64 iteratorReleased=false retainedMiB=1 releasedAfterCancel=true

@@ -1,0 +1,4 @@
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"chunks":64,"event":"measure","http":"h2","iteratorReleased":false,"openConnections":1,"openH2Streams":1,"phase":"response","pulled":4,"registry":"ghcr.io","responseBodyBytes":78,"retainedMiB":65,"seconds":0.286,"status":405,"version":"HTTP/2.0"}
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"chunks":64,"event":"measure","http":"h2","iteratorReleased":false,"openConnections":1,"openH2Streams":1,"phase":"afterWait","pulled":4,"registry":"ghcr.io","retainedMiB":61.5,"seconds":30}
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"event":"shutdown","http":"h2","outcome":"timedOut","registry":"ghcr.io","seconds":10.572}
+{"ahcRef":"1.36.2","body":"eager","bodyMiB":64,"chunks":64,"event":"measure","http":"h2","iteratorReleased":false,"openConnections":1,"openH2Streams":1,"phase":"afterShutdown","pulled":4,"registry":"ghcr.io","retainedMiB":61.5}

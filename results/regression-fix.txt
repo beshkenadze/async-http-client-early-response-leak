@@ -1,0 +1,10 @@
+sources and tests: fix/early-response-request-body-stream 09e1ae2
+swift test --filter "TransactionTests/testRequestBodyStream"
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileUploadIsPaused]' started.
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileUploadIsPaused]' passed (0.005 seconds).
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileWaitingForNextBodyPart]' started.
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileWaitingForNextBodyPart]' passed (0.001 seconds).
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamResumesIfResponseBelow300EndsWhileUploadIsPaused]' started.
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamResumesIfResponseBelow300EndsWhileUploadIsPaused]' passed (0.001 seconds).
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.015) seconds

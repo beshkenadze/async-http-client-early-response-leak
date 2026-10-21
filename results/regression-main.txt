@@ -1,0 +1,12 @@
+sources: upstream main 0171152, tests: TransactionTests.swift from 09e1ae2
+swift test --filter "TransactionTests/testRequestBodyStream"
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileUploadIsPaused]' started.
+Tests/AsyncHTTPClientTests/TransactionTests.swift:450: error: -[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileUploadIsPaused] : failed - Error thrown while executing testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileUploadIsPaused(): EventLoopFutureTimeoutError()
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileUploadIsPaused]' failed (6.777 seconds).
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileWaitingForNextBodyPart]' started.
+Tests/AsyncHTTPClientTests/TransactionTests.swift:501: error: -[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileWaitingForNextBodyPart] : failed - Error thrown while executing testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileWaitingForNextBodyPart(): EventLoopFutureTimeoutError()
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamIsReleasedIfResponseAtLeast300EndsWhileWaitingForNextBodyPart]' failed (5.007 seconds).
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamResumesIfResponseBelow300EndsWhileUploadIsPaused]' started.
+Test Case '-[AsyncHTTPClientTests.TransactionTests testRequestBodyStreamResumesIfResponseBelow300EndsWhileUploadIsPaused]' passed (0.001 seconds).
+	 Executed 3 tests, with 2 failures (0 unexpected) in 11.785 (11.785) seconds
+	 Executed 3 tests, with 2 failures (0 unexpected) in 11.785 (11.792) seconds

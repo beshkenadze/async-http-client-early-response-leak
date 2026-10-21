@@ -1,0 +1,15 @@
+cloning <fork clone> at fix/early-response-request-body-stream into <tmp>
+testing async-http-client 1.36.2-3-g09e1ae2
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithEagerStream]' started.
+Tests/AsyncHTTPClientTests/EarlyResponseBodyLeakTests.swift:185: error: -[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithEagerStream] : XCTAssertFalse failed - body pump task should still be parked after the early 401
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithEagerStream]' failed (2.595 seconds).
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithLazyStream]' started.
+Tests/AsyncHTTPClientTests/EarlyResponseBodyLeakTests.swift:197: error: -[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithLazyStream] : XCTAssertFalse failed - body pump task should still be parked after the early 401
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testEarly401ParksBodyPumpForeverWithLazyStream]' failed (1.026 seconds).
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testParkedPumpForLeaksTool]' started.
+Tests/AsyncHTTPClientTests/EarlyResponseBodyLeakTests.swift:170: -[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testParkedPumpForLeaksTool] : Test skipped - manual leaks(1) probe
+Test Case '-[AsyncHTTPClientTests.EarlyResponseBodyLeakTests testParkedPumpForLeaksTool]' skipped (0.001 seconds).
+	 Executed 3 tests, with 1 test skipped and 2 failures (0 unexpected) in 3.622 (3.623) seconds
+	 Executed 3 tests, with 1 test skipped and 2 failures (0 unexpected) in 3.622 (3.632) seconds
+EAGER: pulled=2/64 iteratorReleased=true retainedMiB=62 releasedAfterCancel=true
+LAZY: pulled=2/64 iteratorReleased=true retainedMiB=0 releasedAfterCancel=true
