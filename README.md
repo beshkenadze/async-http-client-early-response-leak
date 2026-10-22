@@ -12,13 +12,24 @@ Fix: [beshkenadze/async-http-client#1](https://github.com/beshkenadze/async-http
 ./run.sh                                       # AHC 1.36.2, HTTP/2, buffered (eager) body
 AHC_REVISION=0171152 ./run.sh                  # AHC main
 AHC_PATH=/path/to/async-http-client ./run.sh   # local checkout
-./run.sh --http http1 --body lazy              # other variants
+./run.sh --http http1                          # HTTP/1.1
+./run.sh --body lazy                           # body that produces chunks on demand
+./run.sh --wait 660                            # wait 660 s, then call shutdown()
 offline/offline.sh 1.36.2                      # no network, uses MockRequestExecutor
 ```
 
 `run.sh` sends one PUT with a 64 MiB body and no credentials to registry-1.docker.io.
 The registry answers 401 while the body still uploads.
-After 30 s, the program prints if the body iterator was released and how much memory stays allocated.
+After 30 s (or the `--wait` value), the program prints the `"phase":"afterWait"` line:
+
+| Field | Meaning |
+|---|---|
+| `iteratorReleased` | AHC released the body iterator. |
+| `retainedMiB` | Malloc memory in use, minus the value before the request. |
+| `openH2Streams` | HTTP/2 streams that the connection counts as open. |
+
+Then it calls `HTTPClient.shutdown()` with a 10 s limit and prints the `"event":"shutdown"` line.
+Requirements: network access, macOS 15 or later (for `malloc_zone_statistics`) and Swift 6.2 or later.
 
 ## Result
 
